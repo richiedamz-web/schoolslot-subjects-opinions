@@ -36,7 +36,7 @@ function spin() {
   const result = document.getElementById("result");
   const spinBtn = document.getElementById("spinBtn");
   spinBtn.disabled = true;
-  result.textContent = "Ça tourne!... 🎰";
+  result.textContent = "Spinning!... 🎰";
 
   [1, 2, 3, 4, 5].forEach((n, i) => {
     const reel = document.getElementById(`reel${n}`);
@@ -74,7 +74,7 @@ function spin() {
           if (reels.every(r => r === reels[0])) {
             result.textContent = "🎉 Jackpot! You got 5 in a row!";
           } else {
-            result.textContent = "Voici tes images!";
+            result.textContent = "Here are your images!";
           }
           spinBtn.disabled = false;
         }
